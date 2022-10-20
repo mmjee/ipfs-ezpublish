@@ -1,0 +1,13 @@
+[Arguments]
+CertificatePath = "Path to your certificate"
+PrivateKey = "Path to your private key"
+ShellURL = "URL to the IPFS node"
+IPNSKey = "IPNS Key name"
+Target = "The directory to upload"
+
+[Messages]
+PublishMsg = "Publishing to {{ .ID }}."
+IgnoredError = "Ignoring « {{ .Err }} » since it is optional."
+CouldntFindKeyID = "Couldn't find a key with this name."
+Published = "Published {{ .CID }} at {{ .Key }}."
+OldCID = "Found stale file at {{ .CID }}, removing."
