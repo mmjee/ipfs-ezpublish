@@ -35,7 +35,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	bundle := i18n.NewBundle(language.BritishEnglish)
+	bundle := i18n.NewBundle(language.English)
 	bundle.RegisterUnmarshalFunc("toml", toml.Unmarshal)
 	_, _ = bundle.LoadMessageFileFS(translations, "translations/en.toml")
 	_, _ = bundle.LoadMessageFileFS(translations, "translations/bn.toml")
